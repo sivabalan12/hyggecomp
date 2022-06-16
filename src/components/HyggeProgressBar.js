@@ -1,6 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import { Button, ProgressBar,} from 'react-native-paper';
+import {ProgressBar} from 'react-native-paper';
 
 
 const HyggeProgressBar = ({
@@ -11,7 +10,5 @@ const HyggeProgressBar = ({
     <ProgressBar progress={progress} color={color}/>
   );
 };
-
-const styles = StyleSheet.create({container: {backgroundColor: 'yellow'}});
 
 export {HyggeProgressBar};

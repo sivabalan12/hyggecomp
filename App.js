@@ -1,10 +1,8 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import {CustomButton} from './src/components/CustomButton'
 import { HyggeButton } from './src/components/HyggeButton';
 import { HyggeProgressBar } from './src/components/HyggeProgressBar';
 import { HyggeColors } from './src/theme/colors';
-import { Button, ProgressBar, MD3Colors} from 'react-native-paper';
 
 const YourApp = () => {
   return (
