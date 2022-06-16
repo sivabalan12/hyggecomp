@@ -1,6 +1,5 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import {CustomButtonProps} from './index.d';
 
 const CustomButton = ({
   title,

@@ -1,32 +1,42 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import { HyggeButton } from './src/components/HyggeButton';
-import { HyggeProgressBar } from './src/components/HyggeProgressBar';
-import { HyggeColors } from './src/theme/colors';
+import { View, StyleSheet } from 'react-native';
+import {HyggeButton} from './src/components/HyggeButton';
+import {HyggeProgressBar} from './src/components/HyggeProgressBar';
+import {HyggeColors} from './src/theme/colors';
 
 const YourApp = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center' }}>
-    <View style={{ margin: 10,}}></View>
-      <View style={{marginHorizontal: 20}}>
+    <View style={styles.container}>
       <HyggeProgressBar
         progress={0.5}
-        color={HyggeColors.primaryButton}
       />
-      </View>
-      <View style={{ margin: 10,}}></View>
-        <HyggeButton
-          title='Start'
-          style={styles.HyggeButton}
-          mode='contained'
-          labelStyle={{paddingVertical: 5}}
-        />
+      <View style={styles.marginSpace}></View>
+      <HyggeButton
+        title="Start"
+        style={styles.hyggeButton}
+        mode="contained"
+        labelStyle={styles.buttonPadding}
+      />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  HyggeButton: { backgroundColor: HyggeColors.primaryButton, width:'50%', borderRadius: 30, elevation: 0}
-  
-})
+  container:{
+    flex: 1, 
+    justifyContent: 'center'
+  },
+  marginSpace:{
+    margin: 10
+  },
+  hyggeButton: {
+    backgroundColor: HyggeColors.primaryButton,
+    width: '50%',
+    borderRadius: 30,
+    elevation: 0,
+  },
+  buttonPadding: {
+    paddingVertical: 5,
+  },
+});
 export default YourApp;
